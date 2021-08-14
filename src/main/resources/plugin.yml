@@ -1,0 +1,8 @@
+name: ClientBlocker
+version: ${project.version}
+main: gg.tgb.clientblocker.ClientBlocker
+api-version: 1.13
+load: STARTUP
+authors: [ tgb ]
+description: Allows you to block certain clients from joining your server
+website: https://tgb.gg
