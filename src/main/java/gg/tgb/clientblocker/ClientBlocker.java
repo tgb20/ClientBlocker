@@ -44,7 +44,7 @@ public final class ClientBlocker extends JavaPlugin implements PluginMessageList
 
         List<String> allowClients = config.getStringList("allowed-clients");
 
-        if(!allowClients.contains(client)) {
+        if(!ClientParser.clientAllowed(allowClients, client)) {
             p.kickPlayer("Modified clients are not allowed on this server");
             logger.info("Kicked " + p.getName() + " for using " + client + " client!");
         }

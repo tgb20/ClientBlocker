@@ -12,3 +12,10 @@ allowed-clients:
 - vanilla
 - fabric
 ```
+
+You can also use Regex in your allowed clients
+```yaml
+kick-message: Only lunar client is allowed!
+allowed-clients:
+- ^lunarclient.*$
+```
