@@ -9,10 +9,10 @@ public class ClientParser {
 
         boolean allowed = false;
 
-        for(int i = 0; i < allowedClients.size(); i++) {
-            Pattern r = Pattern.compile(allowedClients.get(i));
+        for (String allowedClient : allowedClients) {
+            Pattern r = Pattern.compile(allowedClient);
             Matcher m = r.matcher(client);
-            if(m.matches()) {
+            if (m.matches()) {
                 allowed = true;
                 break;
             }
